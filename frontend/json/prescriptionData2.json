@@ -1,0 +1,8 @@
+{
+    "serialNumber": "123",
+    "patientName": "John Doe",
+    "patientAge": 30,
+    "patientSex": "Male",
+    "pastIllness": "None",
+    "drugAllergy": "None"
+}

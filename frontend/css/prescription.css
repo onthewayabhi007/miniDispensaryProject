@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(22, 22, 122);
+    margin: 0;
+}
+
+.prescription {
+    padding: 40px;
+    max-width: 45rem;
+    margin: 2px auto;
+    top: 50%;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    row-gap: 20px;
+}
+
+.prescribed-by {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-bottom: 2rem;
+}
+
+.left,
+.right {
+    display: flex;
+    flex-direction: column;
+    font-size: smaller;
+}
+
+.right strong{
+    /* color: black; */
+    margin-bottom: -2%;
+}
+.left strong {
+    /* color: black; */
+    margin-bottom: -2%;
+}
+
+.caution {
+    display: grid;
+    align-items: center;
+    left: 50%;
+    margin-top: 1rem;
+}
+
+.writing-space {
+    margin-top: -5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 2px solid #ffffff;
+    /* Add a thicker vertical line to the left */
+    padding-left: 0;
+    /* Add horizontal spacing between the line and the note section */
+}
+
+.horizontal-line {
+    border-top: 2px solid rgb(22, 22, 122);
+    /* Add horizontal lines */
+    width: 100%;
+    /* Adjust the width as needed */
+}
+
+.above-line {
+    margin-bottom:90%;
+    margin-top: -5%;
+    /* Increase the margin to create more space above the line */
+}
+
+.below-line {
+    margin-top: 0;
+    /* Increase the margin to create more space below the line */
+}
+
+.print {
+    text-align: center;
+    margin-top: 0px;
+    /* padding-bottom: 10%; */
+}
+
+@media print {
+    .no-print {
+        display: none !important;
+    }
+}
+
+.bullet-points {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.left-bullet ul,
+.right-bullet ul {
+    list-style: disc;
+    /* Use bullets as list markers */
+    font-size: small;
+}
+
+.left-bullet ul li,
+.right-bullet ul li {
+    margin: 5px 0;
+    /* Adjust the spacing between bullet points */
+}

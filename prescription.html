@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Prescription Form</title>
+    <link rel="stylesheet" href="./frontend/css/prescription.css">
+</head>
+
+<body>
+    <div class="prescription">
+        <div class="header">
+            <h2 class="hindi-text" style="font-size: medium;margin-bottom: -2%;margin-top: -2%;">मालवीय राष्ट्रीय
+                प्रौद्योगिकी संस्थान जयपुर</h2>
+            <h2 style="font-size:medium;margin-bottom: -2%;">Malaviya National Institute of Technology Jaipur</h2>
+            <h3 style="font-size: small;font-weight:1000;margin-bottom: -2%;">ALLOPATHIC DISPENSARY</h3>
+            <h3 style="font-size: smaller;margin-bottom: -2%;">OUT PATIENT TICKET</h3>
+        </div>
+        <div class="prescribed-by">
+            <div class="left">
+                <strong>No.</strong> <span id="serial-number"></span><br>
+                <strong>Name:</strong> <span id="patient-name"></span><br>
+                <strong>Age:</strong> <span id="patient-age"></span><br>
+                <strong>Disease:</strong> <span id="disease"></span><br>
+
+            </div>
+            <div class="right">
+                <strong>Dated:</strong> <span id="date"></span><br>
+                <strong>Sex:</strong> <span id="patient-sex"></span><br>
+                <strong>H/O Past Illness:</strong> <span id="Past Illness"></span><br>
+                <strong>Drug Allergy:</strong> <span id="drug-allergy"></span><br>
+            </div>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="horizontal-line above-line"></div>
+        <!-- You can remove the h4 element here to eliminate the "Doctor's Note" text -->
+        <div class="horizontal-line below-line"></div>
+        <div class="writing-space"></div>
+        <!-- <div class="horizontal-line below-line"></div> -->
+
+        <!-- <div class="writing-space"> -->
+            <div class="bullet-points" style="margin-top: 4%;margin-bottom:-25% ;margin-left: 0;">
+                <div class="left-bullet">
+                    <ul>
+                        <li style="font-size: x-small;">वर्तमान बीमारी/क्रॉनिक बीमारी की पूर्व पर्ची साथ लेकर आएं</li>
+                        <li style="font-size: x-small;">बिना चिकित्सक की सलाह के दवाई न लें</li>
+                    </ul>
+                </div>
+                <div class="right-bullet">
+                    <ul>
+                        <li style="font-size: x-small;">अपने आसपास पानी न जमा होने दे, सफाई रखें।</li>
+                        <li style="font-size: x-small;">आपातकालीन स्थिति में एम्बुलेंस नंबर: 9549650438 पर कॉल करें।</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="print">
+            <button id="print-button" class="no-print" onclick="printPrescription()">Print</button>
+        </div>
+    </div>
+
+    <script src="./frontend/js/prescription.js"></script>
+</body>
+
+</html>
